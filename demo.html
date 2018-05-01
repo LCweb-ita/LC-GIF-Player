@@ -1,0 +1,114 @@
+<!doctype html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">  
+    <title>LC GIF Player Demo</title>
+    
+    <!-- PAGE BASE CSS -->
+    <style type="text/css">
+    /*! normalize.css v2.1.2 | MIT License | git.io/normalize */article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary{display:block}audio,canvas,video{display:inline-block}audio:not([controls]){display:none;height:0}[hidden]{display:none}html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}a:focus{outline:thin dotted}a:active,a:hover{outline:0}h1{font-size:2em;margin:.67em 0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:700}dfn{font-style:italic}hr{-moz-box-sizing:content-box;box-sizing:content-box;height:0}mark{background:#ff0;color:#000}code,kbd,pre,samp{font-family:monospace,serif;font-size:1em}pre{white-space:pre-wrap}q{quotes:"\201C" "\201D" "\2018" "\2019"}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-.5em}sub{bottom:-.25em}img{border:0}svg:not(:root){overflow:hidden}figure{margin:0}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{border:0;padding:0}button,input,select,textarea{font-family:inherit;font-size:100%;margin:0}button,input{line-height:normal}button,select{text-transform:none}button,html input[type=button],input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}textarea{overflow:auto;vertical-align:top}table{border-collapse:collapse;border-spacing:0}<!-- body{font:14px/20px Arial,sans-serif;background-color:#4E5869;margin:0;padding:0;color:#000}dl,ol,ul{padding:0;margin:0}h1,h2,h3,h4,h5,h6,p{margin-top:0;padding-right:15px;padding-left:15px}a img{border:none}a:link{color:#414958;text-decoration:underline}a:visited{color:#4E5869;text-decoration:underline}a:active,a:focus,a:hover{text-decoration:none}.container{width:80%;max-width:1260px;min-width:335px;background-color:#FFF;margin:0 auto}.header{background-color:#6F7D94}.sidebar1{float:right;width:20%;background-color:#93A5C4;padding-bottom:10px}.content{padding:10px 0;width:100%;float:right;background-color:#efefef}.content ol,.content ul{padding:0 15px 15px 40px}ul.nav{list-style:none;border-top:1px solid #666;margin-bottom:15px}ul.nav li{border-bottom:1px solid #666}ul.nav a,ul.nav a:visited{padding:5px 5px 5px 15px;display:block;text-decoration:none;background-color:#8090AB;color:#000}ul.nav a:active,ul.nav a:focus,ul.nav a:hover{background-color:#6F7D94;color:#FFF}.footer{padding:10px 0;background-color:#6F7D94;position:relative;clear:both}.fltrt{float:right;margin-left:8px}.fltlft{float:left;margin-right:8px}.clearfloat{clear:both;height:0;font-size:1px;line-height:0}--> .content,.sidebar1{min-height:500px}
+    </style>
+    
+    
+    
+    
+    <!-- //////////////////////////////////////////////// -->
+    <!-- REQUIRED ELEMENTS -->
+    
+    <link href="lc_gif_player.css" rel="stylesheet">
+    <script type="text/javascript" src="lc_gif_player.pack.js"></script>
+    
+    <!-- //////////////////////////////////////////////// -->
+    
+    
+    
+    <style>
+    .container,
+	.content {
+		box-shadow: 0px 10px 20px rgba(0,0,0,0.5);	
+	}
+	.header {
+		text-align: center;
+		color: #fff;	
+		font-family: arial;
+		padding: 40px 20px 20px;
+	}
+	h2 {
+		font-size: 34px;	
+	}
+	h4 {
+		font-size: 19px;
+		font-weight: normal;	
+	}
+	h4 a {
+		text-decoration: none !important;
+		color: orange !important;	
+	}
+	.content {
+		display: flex;
+		align-items: center;
+	}
+	.content > div {
+		border: 20px solid transparent;
+		margin: auto;
+		background-clip: padding-box;
+	}
+	.target_1 {
+        max-height: 40vh; 
+        max-width: 600px;	
+    }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="header">
+            <h2>LC GIF Player</h2>
+            <h4>A proper <a href="https://github.com/buzzfeed/libgif-js" target="_blank">libgif-js</a> implementation by <a href="https://lcweb.it" target="_blank">LCweb</a></h4>
+        </div>
+        
+        <div class="content">
+              
+        
+            <!-- //////////////////////////////////////////////// -->
+            <!-- REQUIRED HTML -->
+        
+            <div class="target target_1">
+                <img src="" rel:animated_src="./example_gifs/sketch_creation.gif" />
+            </div>
+           
+            
+            <div class="target target_2" style="max-height: 400px;">
+                <img src="" rel:animated_src="./example_gifs/beard.gif" />
+            </div>
+        
+            <!-- //////////////////////////////////////////////// -->
+        
+        
+        </div>
+    </div>
+    
+    
+    
+    
+    <!-- //////////////////////////////////////////////// -->
+    <!-- REQUIRED JAVASCRIPT -->
+    <script type="text/javascript">
+    document.addEventListener("DOMContentLoaded", function(event) {
+        
+        // no autoplay - no extra class - no prev/next commands
+        lc_gif_player('.target_1', false, '', ['move']);
+        
+        // autoplay - no extra class - no fullscreen command
+        lc_gif_player('.target_2', true, '', ['fullscreen']);
+        
+    });
+    </script>
+    <!-- //////////////////////////////////////////////// -->
+
+
+
+</body>
+</html>

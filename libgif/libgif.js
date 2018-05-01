@@ -1,5 +1,6 @@
 /*
 	SuperGif
+	https://github.com/buzzfeed/libgif-js
 
 	Example usage:
 
@@ -751,7 +752,11 @@
             var putFrame = function () {
                 var offset;
                 i = parseInt(i, 10);
-
+				
+				if(!frames.length) {
+					return false;	
+				}
+				
                 if (i > frames.length - 1){
                     i = 0;
                 }
