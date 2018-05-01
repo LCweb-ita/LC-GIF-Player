@@ -1,4 +1,4 @@
-# LC-GIF-Player
+# LC GIF Player
 
 __Prior note:__ this is a [libgif-js](https://github.com/buzzfeed/libgif-js) fork.<br/>
 A very nice javascript piece to manipulate animated GIFs, by [BuzzFeed](https://github.com/buzzfeed)
