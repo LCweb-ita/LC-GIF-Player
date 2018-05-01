@@ -12,7 +12,7 @@ It is __pure javascript and CSS__, then is super quick to be implemented and cus
 Supports modern browsers (_IE 10+_)
 
 
-![lc-gif-player](https://lcweb.it/wp-content/uploads/2018/05/lc_gif_player.jpg)
+![lc-gif-player](https://lcweb.it/wp-content/uploads/2018/05/lc_gif_player_github.png)
 
 
 &nbsp;
@@ -38,12 +38,12 @@ Easiest way to get started is to play with the demo.html file. Here's the code u
 	
 
 	<script type="text/javascript" src="lc_gif_player.pack.js"></script>
-	
+
 	<script type="text/javascript">
-    document.addEventListener("DOMContentLoaded", function(event) {   
-        lc_gif_player('.gif_player');     
-    });
-    </script>
+	document.addEventListener("DOMContentLoaded", function(event) {   
+		lc_gif_player('.gif_player');     
+	});
+	</script>
 </body>
 </html>
 ```
