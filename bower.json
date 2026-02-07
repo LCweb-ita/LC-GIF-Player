@@ -1,0 +1,22 @@
+{
+  "name": "lc-gif-player",
+  "description": "A javascript player.. for GIFs!",
+  "main": [
+  	"lc_gif_player.pack.js",
+  ],
+  "keywords": [
+    "javascript",
+    "player",
+    "vanilla-javascript",
+    "gif",
+    "fullscreen",
+    "javascript-plugin"
+  ],
+  "authors": [
+    "Luca Montanari (https://lcweb.it)"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/LCweb-ita/LC-GIF-Player",
+  "dependencies": {},
+  "ignore": []
+}

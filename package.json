@@ -1,0 +1,49 @@
+{
+    "author": "LCweb",
+    "name": "lc-gif-player",
+    "version": "1.0.0",
+    "description": "A javascript player.. for GIFs!",
+    "keywords": [
+        "javascript",
+        "player",
+        "vanilla-javascript",
+        "gif",
+        "fullscreen",
+        "javascript-plugin"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/LCweb-ita/LC-GIF-Player.git"
+    },
+    "files": [
+        "lc_gif_player.pack.js"
+    ],
+    "dependencies": {},
+    "devDependencies": {},
+    "contributors": [
+        {
+            "name": "LCweb-ita",
+            "url": "https://github.com/LCweb-ita"
+        }
+    ],
+    "license": "MIT",
+    "homepage": "https://github.com/LCweb-ita/LC-GIF-Player",
+    "bugs": "https://github.com/LCweb-ita/LC-GIF-Player/issues",
+    "_extra": {
+        "title": "LC GIF Player",
+        "license": {
+            "type": "MIT",
+            "url": "https://github.com/LCweb-ita/LC-GIF-Player/blob/main/LICENSE"
+        },
+        "links": {
+            "download": "https://github.com/LCweb-ita/LC-GIF-Player/releases",
+            "docs": "https://github.com/LCweb-ita/LC-GIF-Player"
+        },
+        "main": [
+            "lc_gif_player.pack.js"
+        ],
+        "files": [
+            "lc_gif_player.pack.js"
+        ]
+    }
+}
