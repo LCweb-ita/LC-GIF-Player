@@ -3,16 +3,16 @@
 __Prior note:__ this is a [libgif-js](https://github.com/buzzfeed/libgif-js) fork.<br/>
 A very nice javascript piece to manipulate animated GIFs, by [BuzzFeed](https://github.com/buzzfeed)
 
-This tiny project borned since I had the necessity to create a GIF player for my product documentations. <br/>
+This tiny project born since I had the necessity to create a GIF player for my product documentations. <br/>
 GIFs are easy to be implemented and maintained, then sometimes are better than videos.
 
 So.. here it is! A reponsive GIF player featuring __preloader, prev/next commands and a fullscreen mode__.<br/>
 It is __pure javascript and CSS__, then is super quick to be implemented and customized.
 
-Supports modern browsers (_IE 10+_)
+Supports any modern browser
 
 
-![lc-gif-player](https://lcweb.it/wp-content/uploads/2018/05/lc_gif_player_github.png)
+![](player_preview.webp)
 
 
 &nbsp;
@@ -91,4 +91,5 @@ The library works by parsing gif image data in js, extracting individual frames,
 
 * * *
 
-Copyright &copy; [Luca Montanari (aka LCweb)](https://lcweb.it)
+
+Copyright &copy; Luca Montanari - [LCweb](https://lcweb.it)

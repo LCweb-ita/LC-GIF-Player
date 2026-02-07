@@ -26,17 +26,19 @@
     
     <style>
 	.content {
-		display: flex;
-		align-items: center;
-	}
+        display: grid;
+        align-items: center;
+        grid-template-columns: 62% 1fr;
+        margin: 40px 30px;
+        gap: 40px;
+    }
 	.content > div {
-		border: 20px solid transparent;
 		margin: auto;
-		background-clip: padding-box;
 	}
-	.target_1 {
-        max-height: 40vh; 
-        max-width: 600px;	
+	@media screen and (max-width:785px) {
+        .content {
+            grid-template-columns: 1fr;
+        }
     }
     </style>
 </head>
@@ -71,7 +73,7 @@
             <!-- REQUIRED HTML -->
         
             <div class="target target_1">
-                <img src="" rel:animated_src="./example_gifs/sketch_creation.gif" />
+                <img src="" rel:animated_src="./example_gifs/homer.gif" />
             </div>
            
             
